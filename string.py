@@ -119,16 +119,180 @@ Slicing - Extracting a portion of the string
 3) Take string as an input and check if it is a palindrome or not.
 """
 
-my_str = "Python is a Programming Language"
+# my_str = "Python is a Programming Language"
 
-print("Original String: ", my_str)
-print("Length of the String: ", len(my_str))
-print(my_str.capitalize())          # Capitalize the first character
-print(my_str.casefold())            # Convert to lower case
-print(my_str.count("o"))            # Count the number of occurrences of the character
-print(my_str.center(52))            # Center the string
+# print("Original String: ", my_str)
+# print("Length of the String: ", len(my_str))
+# print(my_str.capitalize())          # Capitalize the first character
+# print(my_str.casefold())            # Convert to lower case
+# print(my_str.count("o"))            # Count the number of occurrences of the character
+# print(my_str.center(52))            # Center the string
 
-# 52 - len(my_str) = 52 - 32 = 20/2 = 10  = 10 spaces on both sides
+# # 52 - len(my_str) = 52 - 32 = 20/2 = 10  = 10 spaces on both sides
 
-print(my_str.center(52, "*"))
-print(my_str.center(39, "#"))
+# print(my_str.center(52, "*"))
+# print(my_str.center(39, "#"))
+# my_str = "Python is a Programming Language"
+
+# print(my_str.encode())         # Encode the string by default UTF-8
+# print(my_str.encode("greek"))
+
+# print(my_str.endswith("Language"))        # Returns True if the string ends with the given argument
+# print(my_str.endswith("e"))
+
+# print(my_str.endswith("e", 0, 20))
+
+# print("Hello\tWorld".expandtabs(20))
+
+# print(my_str.find("o"))        # Find the first occurrence of the character
+# print(my_str.find("o", 5))
+
+# print(my_str.rfind("o"))        # Find the last occurrence of the character
+
+# num1 = 15
+# num2 = 10
+
+# add = num1 + num2
+
+# print(num1,"+",num2,"=",add)
+# print(f"{num1} + {num2} = {add}")
+
+# # print("My name is {name}. My age is {age}".format(age = int(input("Enter your age:")),name = input("Enter your name:")))
+
+# print(my_str.index("o"))  # Find the first occurence of the character
+# print(my_str.index("o",5))
+# print(my_str.rindex("o"))
+
+# print(my_str.find("b"))    # Returns -1 if string not found
+# print(my_str.index("b"))   # Raise an error if string not found
+
+"""
+Task 1:
+---------
+Input:
+fullname: Anjali Rakeshbhai Gajjar
+
+Output:
+A.R.Gajjar
+
+Task 2:
+----------
+Write a program that count the number of vowels, consonents and white spaces in String.
+Input:
+
+Python Programming
+
+Output:
+
+vowel : 4
+white spaces : 1
+consonents : 13
+"""
+# print("ABC132".isalnum())              #Returns true if String contains alphabets or numeric
+# print("ABCD".isalnum())
+# print("1234".isalnum())
+# print("!@ABC12&".isalnum())
+
+# print("ABCD".isalpha())              # Returns True if String contains only alphabets
+
+"""
+isdecimal
+isdigit
+isnumeric
+"""
+
+# s5 = "2022"
+# print(s5.isdecimal())   # considers strictly plain digits from 0 to 9 only, nothing else
+# print(s5.isdigit())     # considers subscripts, superscripts and circled numbers also as numbers
+# print(s5.isnumeric())   # considers vulgar fractions, roman numerals, numbers from other languages
+
+# s6 = "2⁸"
+# print(s6)
+# print(s6.isdecimal())
+# print(s6.isdigit())
+# print(s6.isnumeric())
+
+# s7 = "②⓪②②"
+# print(s7)
+# print(s7.isdecimal())
+# print(s7.isdigit())
+# print(s7.isnumeric())
+
+# s8 = "¼"
+# print(s8)
+# print(s8.isdecimal())
+# print(s8.isdigit())
+# print(s8.isnumeric())
+
+# s9 = "二千二十二"
+# print(s9)
+# print(s9.isdecimal())
+# print(s9.isdigit())
+# print(s9.isnumeric())
+
+# s10 = "VI"   
+# s11 = "Ⅵ"
+# print(s10)
+# print(s10.isnumeric())
+# print(s11)
+# print(s11.isnumeric())
+
+# print("Python123".isascii())
+# print("num1".isidentifier())           # True
+# print("num 1".isidentifier())
+# print("1Num".isidentifier())
+# print("&num".isidentifier())
+
+# print("python".islower())          # Returns True if string contains only lower case 
+# print("PYTHON".isupper())
+# print("Python Is A Programming Language".istitle())
+
+# print("PYTHON".lower())
+# print("python".upper())
+# print("python is a programming language".title())
+
+
+# print("Are you #1?".isprintable())
+# print("Are you \n#1?".isprintable())
+
+# print("            hey         ".isspace())
+# print("        ".isspace())
+# print("\t".isspace())
+# print("\n".isspace())
+
+# s1 = "Hello!Good Evening"
+# s2 = "Nice"
+
+# print(s1.join(s2))
+
+# s = "Hello"
+
+# print(s.ljust(10))
+# print(s.ljust(10,"*"))
+
+# print(s.rjust(10))
+# print(s.rjust(10,"*"))
+
+# print("               hey".lstrip())
+# print("hey              ".rstrip())
+
+# print("$$$$$$$$$$$hey".lstrip("$"))
+# print("hello$$$$$$$$$$$$".rstrip("$"))
+# print("$$$$$$$$$$$hello$$$$$$$$$$$$$".strip("$"))
+
+# print("Good_Evening_How_are_you?".partition("_"))
+# print("Good_evening_Hey".rpartition("_"))
+
+# print("Good Evening".replace(" ","_"))
+
+# print("Good_Evening_How_are_you?".split("_",2))
+# print("Good_Evening_How_are_you?".rsplit("_",2))
+
+# print("Good\nEvening\nHow\nAre\nYou?".splitlines())
+# print("Good EveninG".swapcase())
+
+# print("Hello".zfill(10))
+
+# d = "9-08-2022"
+
+# print(d.zfill(10))
